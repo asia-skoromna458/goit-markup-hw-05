@@ -865,7 +865,7 @@ top: 50%;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--text-color);
-    display: block;
+    display: inline-flex;
     margin-bottom: 4px;
 }
 :root {
