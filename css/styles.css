@@ -189,6 +189,7 @@ a{
     margin-right: 120px;
 }
 .footer-container{
+    justify-content: space-between;
     max-width: 1158px;
         margin: 0 auto;
         padding: 0 15px;
@@ -582,4 +583,286 @@ width: 24px;
 .footer-text {
     display: block;
     margin-bottom: 16px;
+}
+.modal-overlay {
+    background-color: #FCFCFC;
+    position: fixed;
+    max-width: 408px;
+    max-height: 90vh;
+    width: 100%;
+    height: auto;
+        overflow-y: auto;
+        padding: 24px;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    /*в кінці замінтити на 0*/
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+    .modal-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 24px;
+            height: 24px;
+            background-color: #e7e9fc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            fill: #2e2f42;
+            border: none;
+        
+}
+.modal-close:hover {
+    background-color: #404bbf;
+    fill: #ffffff;
+}
+.modal-close svg {
+    fill: #2e2f42;
+    transition: fill 250ms ease;
+}
+
+.modal-close:hover {
+    background-color: #404bbf;
+}
+
+.modal-close:hover svg {
+    fill: #ffffff;
+}
+
+.modal-close:hover {
+    border-radius: 100%;
+    fill: #404bbf;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-top: 48px;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+.terms-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.checkbox-hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.checkbox-box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease;
+}
+
+.form-input-modal {
+border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    min-height: 40px;
+    padding-left: 36px;
+    outline: none;
+    transition: border-color 250ms ease;
+}
+.input-wrapper-modal{
+    border: none;
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+.form-input-modal:focus{
+    border: 1px solid #4D5AE5
+}
+.form-input-modal:focus + svg{
+    fill: #4D5AE5;
+}
+.form-icon-modal {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #2e2f42;
+}
+
+.input-modal {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: auto;
+    min-height: 120px;
+    resize: vertical;
+        outline: none;
+        transition: border-color 250ms ease;
+        box-sizing: border-box;
+
+}
+.input-modal:focus {
+    border: 1px solid #4D5AE5;
+}
+.modal-part {
+    color: #4d5ae5;
+    line-height: 1.3;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+
+.form-icon-check {
+width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    transition: background-color 250ms ease, fill 250ms ease;
+}
+.checkbox-hidden:checked+.form-icon-check {
+    background-color: #404BBF;
+    fill: white;
+}
+
+.modal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.input-icon-wrapper {
+    position: relative;
+    width: 360px;
+}
+
+.modal-button {
+    border: none;
+    display: block;
+    margin: 24px auto 0;
+    align-self: center;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    color: #fff;
+}
+
+.modal-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+
+.form-label{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #fff;
+            margin-bottom: 16px;
+            
+}
+
+.form-field{
+    margin-left: auto;
+    align-self: flex-start;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        background-color: #2E2F42;
+        padding: 0 12px;
+        font-size: 14px;
+        transition: border-color 0.3s;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+.form-icon{
+    fill: #fff;
+}
+.form-button:hover {
+    background-color: #4f46e5;
+    transform: translateY(-1px);
+}
+.form-button{
+    margin-top: 40px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: #4d5ae5;
+    color: #fff;
+    width: 165px;
+    height: 40px;
+    gap: 16px;
+    font-family: "Roboto", sans-serif;
 }

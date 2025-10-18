@@ -55,11 +55,72 @@
       </div>
     </header>
     <main>
+        <div class="modal-overlay">
+          <div class="modal">
+            <button class="modal-close" type="button">
+  <svg width="8" height="8">
+    <use href="./images/icons.svg#icon-close"></use>
+  </svg>
+</button>
+            <p class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+            <div class="form-modal">
+              <label class="form-label" for="input-person"></label>
+              <label class="form-label" for="input-phone"></label>
+              <label class="form-label" for="input-mail"></label>
+              <label class="form-label" for="input-comment"></label>
+               <div class="input-wrapper-modal">
+                <p class="modal-text">Name</p>
+                <div class="input-icon-wrapper">
+                  <input class="form-input-modal" name="input-person" id="input-person" type="text" aria-label="Name"/>
+    <svg class="form-icon-modal" width="18" height="24">
+      <use href="./images/icons.svg#icon-person"></use>
+    </svg>
+    </div>
+  </div>
+   <div class="input-wrapper-modal">
+    <p class="modal-text">Phone</p>
+    <div class="input-icon-wrapper">
+    <input class="form-input-modal" name="input-phone" id="input-phone" type="tel" aria-label="Phone"/>
+    <svg class="form-icon-modal" width="18" height="24">
+      <use href="./images/icons.svg#icon-phone"></use>
+    </svg>
+    </div>
+  </div>
+   <div class="input-wrapper-modal">
+  <p class="modal-text">Email</p>
+  <div class="input-icon-wrapper">
+    <input class="form-input-modal" name="input-mail" id="input-mail" type="email" aria-label="Email"/>
+    <svg class="form-icon-modal" width="18" height="24">
+      <use href="./images/icons.svg#icon-email"></use>
+    </svg>
+  </div>
+</div>
+  </div>
+   <div class="input-wrapper-modal">
+    <p class="modal-text">Comment</p>
+    <textarea class="input-modal" name="input-comment" id="input-comment" placeholder="Text input" aria-label="Comment"></textarea>
+   </div>
+   <div class="terms-wrapper">
+  <label class="checkbox-container">
+    <input type="checkbox" id="terms" class="checkbox-hidden" />
+    <svg class="form-icon-check" width="16" height="16">
+      <use href="./images/icons.svg#icon-check"></use>
+    </svg>
+    <span class="modal-text">
+      I accept the terms and conditions of the <span class="modal-part">Privacy Policy</span>
+    </span>
+  </label>
+</div>
+   <button class="modal-button">Send</button>
+            </div>
+          </div>
+
       <section id="studio" class="section-hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
-        </div>
       </section>
 
       <section class="features">
@@ -459,6 +520,23 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="form-field">
+          <div class="input-wrapper">
+            <label class="form-label" for="input-mail">Subscribe</label>
+            <input
+              class="form-input"
+              id="input-mail"
+              type="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="form-button" type="submit">
+            Subscribe
+            <svg class="form-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
