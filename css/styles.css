@@ -839,9 +839,6 @@ top: 50%;
     position: relative;
     width: 360px;
 }
-button.modal-button {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
 .modal-button {
     border: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
