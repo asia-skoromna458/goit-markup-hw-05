@@ -859,13 +859,18 @@ top: 50%;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+label.modal-text {
+    display: block;
+}
 
+span.modal-text {
+    display: inline-flex;
+}
 .modal-text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--text-color);
-    display: inline-flex;
     margin-bottom: 4px;
 }
 :root {
