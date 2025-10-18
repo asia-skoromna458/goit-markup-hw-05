@@ -672,7 +672,7 @@ width: 24px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--text-color);
-        display: flex;
+        display: inline-flex;
         gap: 8px;
         cursor: pointer;
 }
