@@ -582,7 +582,6 @@ width: 24px;
 .footer-logo,
 .footer-text {
     display: block;
-    margin-bottom: 16px;
 }
 .modal-overlay {
     display: flex;
@@ -725,13 +724,11 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     margin-bottom: 16px;
 }
 .input-wrapper-modal{
-    margin-bottom: 8px;
     border: none;
     display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 8px;
     }
 .form-input-modal:focus{
     border: 1px solid #4D5AE5
@@ -810,7 +807,6 @@ span.checkbox-icon {
 
 
 .modal {
-    margin-bottom: 8px;
 position: absolute;
 top: 50%;
     left: 50%;
@@ -932,7 +928,6 @@ span.modal-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     width: 165px;
     height: 40px;
     background-color: #4d5ae5;
