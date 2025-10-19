@@ -635,7 +635,14 @@ width: 24px;
     border: none;
     fill: #ffffff;
 }
-    
+    .modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-close:focus svg {
+  fill: #ffffff;
+}
 .modal-close:hover {
     border: none;
     background-color: #404bbf;
