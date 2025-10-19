@@ -1,6 +1,4 @@
-:root {
-    --overlay-text-color: #f4f4fd;
-}
+
 body:has(.modal-overlay.is-open){
     overflow: hidden;
 }
@@ -773,21 +771,14 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.visually-hidden:checked+.form-icon-check {
-    background-color: var(--checked-bg-color);
-    border: none;
-    fill: var(--checked-fill-color);
-}
-.visually-hidden:checked + .checkbox-container .form-icon-check {
-    background-color: var(--checked-bg-color);
-        border: none;
-        fill: var(--checked-fill-color);
-}
+
 :root {
+    --text-color: #8e8f99;
     --checked-bg-color: #404bbf;
     --checked-fill-color: #F4F4FD;
     --link-color: #4d5ae5;
     --text-color: #8e8f99;
+    --overlay-text-color: #f4f4fd;
 }
 .visually-hidden {
     position: absolute;
@@ -808,16 +799,7 @@ span.form-icon-check {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.visually-hidden:checked+label>.form-icon-check {
-    background-color: var(--checked-bg-color);
-    border: none;
-    fill: var(--checked-fill-color);
-}
-input[type="checkbox"]:checked+label>span.form-icon-check {
-    background-color: var(--checked-bg-color);
-    border: none;
-    fill: var(--checked-fill-color);
-}
+
 .modal {
     margin-bottom: 8px;
 position: absolute;
@@ -879,9 +861,6 @@ span.modal-text {
     letter-spacing: 0.04em;
     color: var(--text-color);
     margin-bottom: 4px;
-}
-:root {
-    --text-color: #8e8f99;
 }
 
 .form-label{
