@@ -1,6 +1,9 @@
 :root {
     --overlay-text-color: #f4f4fd;
 }
+body:has(.modal-overlay.is-open){
+    overflow: hidden;
+}
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
