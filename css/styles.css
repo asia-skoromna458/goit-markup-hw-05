@@ -816,7 +816,6 @@ top: 50%;
 input[type=checkbox]:checked + .checkbox-container > .checkbox-icon {
     background-color: #404bbf;
         border: none;
-        color: #f4f4fd;
         fill: #f4f4fd;
 }
 .input-icon-wrapper {
