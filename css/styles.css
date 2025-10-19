@@ -677,11 +677,7 @@ width: 24px;
         gap: 8px;
         cursor: pointer;
 }
-.visually-hidden {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
+
 .checkbox-box {
     width: 16px;
     height: 16px;
