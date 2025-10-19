@@ -779,11 +779,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     --text-color: #8e8f99;
     --overlay-text-color: #f4f4fd;
 }
-.visually-hidden {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
+
 span.checkbox-icon {
     width: 16px;
     height: 16px;
