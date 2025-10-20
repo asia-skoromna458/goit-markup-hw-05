@@ -188,7 +188,6 @@ a{
 }
 
 .footer-container{
-    justify-content: space-between;
     max-width: 1158px;
         margin: 0 auto;
         padding: 0 15px;
@@ -199,6 +198,12 @@ a{
 .footer-logo .logo-part {
     color: #f4f4fd;
     display: inline-block;
+}
+.footer-left{
+    margin-right: 120px;
+}
+.footer-right{
+    margin-right: 80px;
 }
 .footer-text{
         font-size: 16px;
@@ -874,8 +879,6 @@ span.modal-text {
         line-height: 1.5;
             letter-spacing: 0.02em;
             color: #fff;
-            margin-bottom: 16px;
-            
 }
 
 .form-field {
@@ -938,6 +941,7 @@ span.modal-text {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    
 }
 .footer-form-container {
     display: flex;
