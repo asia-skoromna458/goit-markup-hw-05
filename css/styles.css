@@ -186,9 +186,7 @@ a{
     background-color: #404bbf;
     color: #fff;
 }
-.footer-left {
-    margin-right: 120px;
-}
+
 .footer-container{
     justify-content: space-between;
     max-width: 1158px;
@@ -882,7 +880,7 @@ span.modal-text {
 
 .form-field {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -922,13 +920,13 @@ span.modal-text {
     background-color: #4f46e5;
     transform: translateY(-1px);
 }
+
+
 .form-button {
-    margin-bottom: 20px;
-    min-width: 165px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 165px;
+    min-width: 165px;
+    align-items: center;
     height: 40px;
     background-color: #4d5ae5;
     color: #fff;
@@ -940,10 +938,11 @@ span.modal-text {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    align-self: center;
 }
 .footer-form-container {
-    justify-content: center;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
 }
 .text-form-footer{
     margin-bottom: 16px;
